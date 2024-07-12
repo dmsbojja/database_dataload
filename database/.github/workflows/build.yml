@@ -1,12 +1,12 @@
-nmae: Manual workflow
+name: Manual Trigger Workflow with Parameters
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
+   
 jobs:
-    demo:
-      
-      runs-on: ubuntu-latest
-      
-      steps:
-        -names: Greetings
-         run: echo "Hello,World"
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Greetings
+      run: echo "Hello World"
