@@ -1,0 +1,12 @@
+nmae: Manual workflow
+
+on:
+    workflow_dispatch:
+jobs:
+    demo:
+      
+      runs-on: ubuntu-latest
+      
+      steps:
+        -names: Greetings
+         run: echo "Hello,World"
